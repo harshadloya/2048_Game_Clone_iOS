@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+
+    IBOutlet UILabel *title;
+    
+    IBOutlet UILabel *score;
+    
+    IBOutletCollection(UILabel) NSArray *tiles;
+}
 
 
 @end
