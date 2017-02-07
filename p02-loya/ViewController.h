@@ -18,7 +18,7 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *Reset;
 
-- (IBAction)reset;
+-(IBAction)startOver;
 
 @end
 

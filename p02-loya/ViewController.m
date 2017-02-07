@@ -67,12 +67,15 @@ bool startOfNewGame;
     }
 }
 
-- (IBAction)reset
+-(IBAction)startOver
 {
     NSInteger i=0;
-    while(i<=15)
+    double j=0;
+    while(j<=15)
     {
         [[Tiles objectAtIndex:i] setText:@""];
+        i=i+1;
+        j=i;
     }
     [Score setText:@"Score 1"];
     startOfNewGame = true;
