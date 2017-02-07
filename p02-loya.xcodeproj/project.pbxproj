@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1802181E4A3CEF00F90C9C /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1802161E4A3CEF00F90C9C /* left.png */; };
+		AF1802191E4A3CEF00F90C9C /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = AF1802171E4A3CEF00F90C9C /* down.png */; };
+		AF18021B1E4A3D0A00F90C9C /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = AF18021A1E4A3D0A00F90C9C /* right.png */; };
+		AF18021D1E4A3D1600F90C9C /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = AF18021C1E4A3D1600F90C9C /* up.png */; };
+		AF18021F1E4A3F3700F90C9C /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF18021E1E4A3F3700F90C9C /* undo.png */; };
 		AF52FB961E47AE8E0061CCA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52FB951E47AE8E0061CCA8 /* main.m */; };
 		AF52FB991E47AE8E0061CCA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52FB981E47AE8E0061CCA8 /* AppDelegate.m */; };
 		AF52FB9C1E47AE8E0061CCA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52FB9B1E47AE8E0061CCA8 /* ViewController.m */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF1802161E4A3CEF00F90C9C /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		AF1802171E4A3CEF00F90C9C /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		AF18021A1E4A3D0A00F90C9C /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		AF18021C1E4A3D1600F90C9C /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		AF18021E1E4A3F3700F90C9C /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo.png; sourceTree = "<group>"; };
 		AF52FB911E47AE8E0061CCA8 /* p02-loya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "p02-loya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF52FB951E47AE8E0061CCA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF52FB971E47AE8E0061CCA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 		AF52FB941E47AE8E0061CCA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF18021E1E4A3F3700F90C9C /* undo.png */,
+				AF18021C1E4A3D1600F90C9C /* up.png */,
+				AF18021A1E4A3D0A00F90C9C /* right.png */,
+				AF1802161E4A3CEF00F90C9C /* left.png */,
+				AF1802171E4A3CEF00F90C9C /* down.png */,
 				AF52FB951E47AE8E0061CCA8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -249,8 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF18021D1E4A3D1600F90C9C /* up.png in Resources */,
+				AF18021F1E4A3F3700F90C9C /* undo.png in Resources */,
+				AF18021B1E4A3D0A00F90C9C /* right.png in Resources */,
 				AF52FBA71E47AE8E0061CCA8 /* LaunchScreen.storyboard in Resources */,
+				AF1802191E4A3CEF00F90C9C /* down.png in Resources */,
 				AF52FBA41E47AE8E0061CCA8 /* Assets.xcassets in Resources */,
+				AF1802181E4A3CEF00F90C9C /* left.png in Resources */,
 				AF52FB9F1E47AE8E0061CCA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +531,7 @@
 				AF52FBC31E47AE8E0061CCA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF52FBC41E47AE8E0061CCA8 /* Build configuration list for PBXNativeTarget "p02-loyaTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +540,7 @@
 				AF52FBC61E47AE8E0061CCA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF52FBC71E47AE8E0061CCA8 /* Build configuration list for PBXNativeTarget "p02-loyaUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +549,7 @@
 				AF52FBC91E47AE8E0061CCA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

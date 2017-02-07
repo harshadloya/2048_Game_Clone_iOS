@@ -172,38 +172,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDx-7l-n10">
-                                <rect key="frame" x="137" y="513" width="100" height="75"/>
+                                <rect key="frame" x="275" y="88" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUs-e3-xSP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fa-NG-MyT">
+                                <rect key="frame" x="162" y="530" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="up.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkC-TK-uRG">
+                                <rect key="frame" x="220" y="560" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="right.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY6-0U-hgF">
+                                <rect key="frame" x="104" y="560" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="left.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCg-cy-b91">
+                                <rect key="frame" x="162" y="590" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="down.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxG-Mf-Tf9">
+                                <rect key="frame" x="211" y="100" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="undo.png"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.49407786130905151" green="0.49413996934890747" blue="0.49405676126480103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.49799913169999999" green="0.49806177619999997" blue="0.49797785280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="Reset" destination="GDx-7l-n10" id="SJt-oz-Zta"/>
                         <outlet property="Score" destination="vex-cI-REy" id="yOI-vB-vRH"/>
                         <outlet property="Title" destination="rZg-F1-ghV" id="XbS-Rs-8eg"/>
-                        <outlet property="score" destination="vex-cI-REy" id="qkP-K6-g6N"/>
-                        <outlet property="title" destination="rZg-F1-ghV" id="iag-dy-WNw"/>
-                        <outletCollection property="tiles" destination="HYk-nQ-YJh" id="NJl-Rv-ghb"/>
-                        <outletCollection property="tiles" destination="Peb-Vm-55N" id="lvL-ob-fER"/>
-                        <outletCollection property="tiles" destination="Lx1-Tx-GR1" id="KjW-bv-oLy"/>
-                        <outletCollection property="tiles" destination="kbg-jz-vCa" id="f8X-W8-35X"/>
-                        <outletCollection property="tiles" destination="LSP-Zl-044" id="jxK-0q-xX3"/>
-                        <outletCollection property="tiles" destination="voT-Eo-d5K" id="TIE-Zx-Ecc"/>
-                        <outletCollection property="tiles" destination="K1U-Ng-iiR" id="aCX-cW-4O3"/>
-                        <outletCollection property="tiles" destination="4oS-iQ-zKJ" id="ESe-iO-VcG"/>
-                        <outletCollection property="tiles" destination="saf-l3-U1v" id="zxG-pt-bi4"/>
-                        <outletCollection property="tiles" destination="N6M-GW-k5R" id="OR7-TT-m6S"/>
-                        <outletCollection property="tiles" destination="SN2-Ie-Umo" id="7Wd-ZG-JHf"/>
-                        <outletCollection property="tiles" destination="uX0-48-Rmz" id="g49-GE-dT9"/>
-                        <outletCollection property="tiles" destination="1Vf-0h-b08" id="ics-y7-r7X"/>
-                        <outletCollection property="tiles" destination="bKe-wv-ygU" id="Czw-5q-eSk"/>
-                        <outletCollection property="tiles" destination="yY3-It-KQ7" id="aAq-la-10H"/>
-                        <outletCollection property="tiles" destination="nrH-cs-NiK" id="4AN-JU-fZV"/>
                         <outletCollection property="Tiles" destination="HYk-nQ-YJh" id="ifc-fU-XAJ"/>
                         <outletCollection property="Tiles" destination="Peb-Vm-55N" id="Wwc-hR-mvh"/>
                         <outletCollection property="Tiles" destination="Lx1-Tx-GR1" id="8A3-U1-leY"/>
@@ -227,4 +236,11 @@
             <point key="canvasLocation" x="-600.79999999999995" y="61.619190404797607"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down.png" width="224" height="225"/>
+        <image name="left.png" width="225" height="225"/>
+        <image name="right.png" width="224" height="225"/>
+        <image name="undo.png" width="512" height="512"/>
+        <image name="up.png" width="224" height="225"/>
+    </resources>
 </document>

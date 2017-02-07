@@ -18,13 +18,13 @@
 @synthesize Tiles;
 @synthesize Reset;
 @synthesize Score;
-bool startOfGame;
+bool startOfNewGame;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //Initializing the game
-    startOfGame = true;
+    startOfNewGame = true;
     [self randomNumberGenerator];
 }
 
@@ -37,7 +37,7 @@ bool startOfGame;
 - (void)randomNumberGenerator
 {
     //Initializes 2 random blocks with 2 to start the game
-    if(startOfGame)
+    if(startOfNewGame)
     {
         NSInteger x = arc4random_uniform(16);
         if([[[Tiles objectAtIndex:x] text] isEqual:@""])
@@ -55,7 +55,7 @@ bool startOfGame;
         {
             [[Tiles objectAtIndex:y] setText:@"2"];
         }
-        startOfGame = false;
+        startOfNewGame = false;
     }
     else
     {
@@ -65,6 +65,18 @@ bool startOfGame;
             [[Tiles objectAtIndex:x] setText:@"2"];
         }
     }
+}
+
+- (IBAction)reset
+{
+    NSInteger i=0;
+    while(i<=15)
+    {
+        [[Tiles objectAtIndex:i] setText:@""];
+    }
+    [Score setText:@"Score 1"];
+    startOfNewGame = true;
+    [self randomNumberGenerator];
 }
 
 @end
