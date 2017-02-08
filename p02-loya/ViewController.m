@@ -95,7 +95,6 @@ int score;
     {
         if((j==3) || (j==7) || (j==11))
         {
-            //j=j+1;
             NSLog(@"Moving to next Row");
         }
         
@@ -157,7 +156,7 @@ int score;
         }
         i=i+4;
     }
-    [self randomNumberGenerator];    
+    [self randomNumberGenerator];
 }
 
 -(IBAction)moveRightButton
