@@ -12,13 +12,18 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *Title;
 
-@property (strong, nonatomic) IBOutlet UILabel *Score;
+@property (retain, nonatomic) IBOutlet UILabel *Score;
+
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *Tiles;
 
-@property (strong, nonatomic) IBOutlet UIButton *Reset;
 
 -(IBAction)startOver;
+-(IBAction)moveLeftButton;
+-(IBAction)moveRightButton;
+-(IBAction)moveUpButton;
+-(IBAction)moveDownButton;
+-(IBAction)undo;
 
 @end
 

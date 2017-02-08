@@ -16,15 +16,16 @@
 
 @synthesize Title;
 @synthesize Tiles;
-@synthesize Reset;
 @synthesize Score;
 bool startOfNewGame;
+int score;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //Initializing the game
     startOfNewGame = true;
+    [Score setText:@"0"];
     [self randomNumberGenerator];
 }
 
@@ -60,6 +61,10 @@ bool startOfNewGame;
     else
     {
         NSInteger x = arc4random_uniform(16);
+        while(![[[Tiles objectAtIndex:x] text] isEqual:@""])
+        {
+            x = arc4random_uniform(16);
+        }
         if([[[Tiles objectAtIndex:x] text] isEqual:@""])
         {
             [[Tiles objectAtIndex:x] setText:@"2"];
@@ -70,16 +75,124 @@ bool startOfNewGame;
 -(IBAction)startOver
 {
     NSInteger i=0;
-    double j=0;
-    while(j<=15)
+    while(i<=15)
     {
         [[Tiles objectAtIndex:i] setText:@""];
         i=i+1;
-        j=i;
     }
-    [Score setText:@"Score 1"];
-    startOfNewGame = true;
-    [self randomNumberGenerator];
+    [self viewDidLoad];
+}
+
+-(IBAction)moveLeftButton
+{
+    [self moveLeft];
+}
+
+-(void)moveLeft
+{
+    int j=0;
+    while(j<=14)
+    {
+        if((j==3) || (j==7) || (j==11))
+        {
+            //j=j+1;
+            NSLog(@"Moving to next Row");
+        }
+        
+        else if([[[Tiles objectAtIndex:j] text] isEqual: [[Tiles objectAtIndex:j+1] text]])
+            {
+                int sum=[[[Tiles objectAtIndex:j] text] intValue] + [[[Tiles objectAtIndex:j+1] text] intValue];
+                if(sum>0)
+                {
+                    score = score + sum;
+                    [[Tiles objectAtIndex:j] setText:[NSString stringWithFormat:@"%d",sum]];
+                    [[Tiles objectAtIndex:j+1] setText:@""];
+                }
+            }
+        j=j+1;
+        [Score setText:[NSString stringWithFormat:@"%d",score]];
+    }
+    
+    int i=0;
+    while(i<=12)
+    {
+        if([[[Tiles objectAtIndex:i] text] isEqual:@""])
+        {
+            [[Tiles objectAtIndex:i] setText: [[Tiles objectAtIndex:i+1] text]];
+            [[Tiles objectAtIndex:i+1] setText:@""];
+        }
+        
+        if([[[Tiles objectAtIndex:i+1] text] isEqual:@""])
+        {
+            if([[[Tiles objectAtIndex:i] text] isEqual:@""])
+            {
+                [[Tiles objectAtIndex:i] setText: [[Tiles objectAtIndex:i+2] text]];
+                [[Tiles objectAtIndex:i+2] setText:@""];
+            }
+            else
+            {
+                [[Tiles objectAtIndex:i+1] setText: [[Tiles objectAtIndex:i+2] text]];
+                [[Tiles objectAtIndex:i+2] setText:@""];
+            }
+        }
+        
+        if([[[Tiles objectAtIndex:i+2] text] isEqual:@""])
+        {
+            if([[[Tiles objectAtIndex:i] text] isEqual:@""])
+            {
+                [[Tiles objectAtIndex:i] setText: [[Tiles objectAtIndex:i+3] text]];
+                [[Tiles objectAtIndex:i+3] setText:@""];
+            }
+            
+            else if([[[Tiles objectAtIndex:i+1] text] isEqual:@""])
+            {
+                [[Tiles objectAtIndex:i+1] setText: [[Tiles objectAtIndex:i+3] text]];
+                [[Tiles objectAtIndex:i+3] setText:@""];
+            }
+            else
+            {
+                [[Tiles objectAtIndex:i+2] setText: [[Tiles objectAtIndex:i+3] text]];
+                [[Tiles objectAtIndex:i+3] setText:@""];
+            }
+        }
+        i=i+4;
+    }
+    [self randomNumberGenerator];    
+}
+
+-(IBAction)moveRightButton
+{
+    [self moveRight];
+}
+
+-(void)moveRight
+{
+    
+}
+
+-(IBAction)moveUpButton
+{
+    [self moveUp];
+}
+
+-(void)moveUp
+{
+    
+}
+
+-(IBAction)moveDownButton
+{
+    [self moveDown];
+}
+
+-(void)moveDown
+{
+    
+}
+
+-(IBAction)undo
+{
+    
 }
 
 @end
