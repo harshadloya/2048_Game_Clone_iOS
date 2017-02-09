@@ -23,7 +23,6 @@
 -(IBAction)moveRightButton;
 -(IBAction)moveUpButton;
 -(IBAction)moveDownButton;
--(IBAction)undo;
 
 @end
 
