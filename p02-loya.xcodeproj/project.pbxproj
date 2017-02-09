@@ -21,6 +21,17 @@
 		AF52FBA71E47AE8E0061CCA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF52FBA51E47AE8E0061CCA8 /* LaunchScreen.storyboard */; };
 		AF52FBB21E47AE8E0061CCA8 /* p02_loyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52FBB11E47AE8E0061CCA8 /* p02_loyaTests.m */; };
 		AF52FBBD1E47AE8E0061CCA8 /* p02_loyaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52FBBC1E47AE8E0061CCA8 /* p02_loyaUITests.m */; };
+		AF8573A31E4BDBA40044C69D /* pm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573A21E4BDBA40044C69D /* pm.jpg */; };
+		AF8573AF1E4BE41C0044C69D /* harvey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573A41E4BE41C0044C69D /* harvey.jpg */; };
+		AF8573B01E4BE41C0044C69D /* kc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573A51E4BE41C0044C69D /* kc.jpg */; };
+		AF8573B11E4BE41C0044C69D /* kd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573A61E4BE41C0044C69D /* kd.jpg */; };
+		AF8573B21E4BE41C0044C69D /* kg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573A71E4BE41C0044C69D /* kg.jpg */; };
+		AF8573B41E4BE41C0044C69D /* ll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573A91E4BE41C0044C69D /* ll.jpg */; };
+		AF8573B51E4BE41C0044C69D /* mg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573AA1E4BE41C0044C69D /* mg.jpg */; };
+		AF8573B61E4BE41C0044C69D /* ms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573AB1E4BE41C0044C69D /* ms.jpg */; };
+		AF8573B71E4BE41C0044C69D /* sm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573AC1E4BE41C0044C69D /* sm.jpg */; };
+		AF8573B81E4BE41C0044C69D /* wm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573AD1E4BE41C0044C69D /* wm.jpg */; };
+		AF8573B91E4BE41C0044C69D /* zz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF8573AE1E4BE41C0044C69D /* zz.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +74,17 @@
 		AF52FBB81E47AE8E0061CCA8 /* p02-loyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "p02-loyaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF52FBBC1E47AE8E0061CCA8 /* p02_loyaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = p02_loyaUITests.m; sourceTree = "<group>"; };
 		AF52FBBE1E47AE8E0061CCA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8573A21E4BDBA40044C69D /* pm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pm.jpg; sourceTree = "<group>"; };
+		AF8573A41E4BE41C0044C69D /* harvey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harvey.jpg; sourceTree = "<group>"; };
+		AF8573A51E4BE41C0044C69D /* kc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kc.jpg; sourceTree = "<group>"; };
+		AF8573A61E4BE41C0044C69D /* kd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kd.jpg; sourceTree = "<group>"; };
+		AF8573A71E4BE41C0044C69D /* kg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kg.jpg; sourceTree = "<group>"; };
+		AF8573A91E4BE41C0044C69D /* ll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ll.jpg; sourceTree = "<group>"; };
+		AF8573AA1E4BE41C0044C69D /* mg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mg.jpg; sourceTree = "<group>"; };
+		AF8573AB1E4BE41C0044C69D /* ms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ms.jpg; sourceTree = "<group>"; };
+		AF8573AC1E4BE41C0044C69D /* sm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sm.jpg; sourceTree = "<group>"; };
+		AF8573AD1E4BE41C0044C69D /* wm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wm.jpg; sourceTree = "<group>"; };
+		AF8573AE1E4BE41C0044C69D /* zz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zz.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +152,17 @@
 		AF52FB941E47AE8E0061CCA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF8573A21E4BDBA40044C69D /* pm.jpg */,
+				AF8573A41E4BE41C0044C69D /* harvey.jpg */,
+				AF8573A51E4BE41C0044C69D /* kc.jpg */,
+				AF8573A61E4BE41C0044C69D /* kd.jpg */,
+				AF8573A71E4BE41C0044C69D /* kg.jpg */,
+				AF8573A91E4BE41C0044C69D /* ll.jpg */,
+				AF8573AA1E4BE41C0044C69D /* mg.jpg */,
+				AF8573AB1E4BE41C0044C69D /* ms.jpg */,
+				AF8573AC1E4BE41C0044C69D /* sm.jpg */,
+				AF8573AD1E4BE41C0044C69D /* wm.jpg */,
+				AF8573AE1E4BE41C0044C69D /* zz.jpg */,
 				AF18021E1E4A3F3700F90C9C /* undo.png */,
 				AF18021C1E4A3D1600F90C9C /* up.png */,
 				AF18021A1E4A3D0A00F90C9C /* right.png */,
@@ -264,11 +297,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8573B41E4BE41C0044C69D /* ll.jpg in Resources */,
+				AF8573B21E4BE41C0044C69D /* kg.jpg in Resources */,
+				AF8573A31E4BDBA40044C69D /* pm.jpg in Resources */,
+				AF8573B01E4BE41C0044C69D /* kc.jpg in Resources */,
+				AF8573B81E4BE41C0044C69D /* wm.jpg in Resources */,
+				AF8573B91E4BE41C0044C69D /* zz.jpg in Resources */,
 				AF18021D1E4A3D1600F90C9C /* up.png in Resources */,
+				AF8573AF1E4BE41C0044C69D /* harvey.jpg in Resources */,
+				AF8573B11E4BE41C0044C69D /* kd.jpg in Resources */,
 				AF18021F1E4A3F3700F90C9C /* undo.png in Resources */,
+				AF8573B71E4BE41C0044C69D /* sm.jpg in Resources */,
+				AF8573B51E4BE41C0044C69D /* mg.jpg in Resources */,
 				AF18021B1E4A3D0A00F90C9C /* right.png in Resources */,
 				AF52FBA71E47AE8E0061CCA8 /* LaunchScreen.storyboard in Resources */,
 				AF1802191E4A3CEF00F90C9C /* down.png in Resources */,
+				AF8573B61E4BE41C0044C69D /* ms.jpg in Resources */,
 				AF52FBA41E47AE8E0061CCA8 /* Assets.xcassets in Resources */,
 				AF1802181E4A3CEF00F90C9C /* left.png in Resources */,
 				AF52FB9F1E47AE8E0061CCA8 /* Main.storyboard in Resources */,
