@@ -395,7 +395,6 @@ int noOfDownMoves;
         [self deleteRandomTile];
         noOfDownMoves = 0;
     }
-    
     [self tileColorChange];
 
 }
