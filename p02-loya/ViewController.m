@@ -22,6 +22,10 @@ int score;
 bool moveUp;
 bool moveLeft;
 int moveOccurred;
+int noOfLeftMoves;
+int noOfRightMoves;
+int noOfUpMoves;
+int noOfDownMoves;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,6 +72,7 @@ int moveOccurred;
         while(![[[Tiles objectAtIndex:x] text] isEqual:@""])
         {
             x = arc4random_uniform(16);
+
         }
         if([[[Tiles objectAtIndex:x] text] isEqual:@""])
         {
@@ -75,6 +80,19 @@ int moveOccurred;
         }
     }
     [self tileColorChange];
+}
+
+- (void)deleteRandomTile
+{
+    NSInteger x = arc4random_uniform(16);
+    int a = 1;
+    while(!([[[Tiles objectAtIndex:x] text] intValue] > a))
+    {
+        x = arc4random_uniform(16);
+        
+    }
+    
+    [[Tiles objectAtIndex:x] setText:@""];
 }
 
 -(IBAction)startOver
@@ -99,7 +117,19 @@ int moveOccurred;
     [self gameWinCondn];
     if(moveOccurred==1)
         [self randomNumberGenerator];
+    
+    noOfLeftMoves = noOfLeftMoves + 1;
+    noOfUpMoves = 0;
+    noOfRightMoves = 0;
+    noOfDownMoves = 0;
+    if(noOfLeftMoves == 3)
+        {
+            [self deleteRandomTile];
+            noOfLeftMoves = 0;
+        }
+    
     [self tileColorChange];
+    
 }
 
 -(void)moveLeft
@@ -164,7 +194,19 @@ int moveOccurred;
     [self gameWinCondn];
     if(moveOccurred==1)
         [self randomNumberGenerator];
+    
+    noOfLeftMoves = 0;
+    noOfUpMoves = 0;
+    noOfDownMoves = 0;
+    noOfRightMoves = noOfRightMoves + 1;
+    if(noOfRightMoves == 3)
+    {
+        [self deleteRandomTile];
+        noOfRightMoves = 0;
+    }
+    
     [self tileColorChange];
+    
 }
 
 -(void)moveRight
@@ -264,7 +306,20 @@ int moveOccurred;
     [self gameWinCondn];
     if(moveOccurred==1)
         [self randomNumberGenerator];
+    
+    noOfLeftMoves = 0;
+    noOfRightMoves = 0;
+    noOfUpMoves = noOfUpMoves + 1;
+    noOfDownMoves = 0;
+    
+    if(noOfUpMoves == 3)
+    {
+        [self deleteRandomTile];
+        noOfUpMoves = 0;
+    }
+    
     [self tileColorChange];
+
 }
 
 -(void)moveUp
@@ -329,7 +384,20 @@ int moveOccurred;
     [self gameWinCondn];
     if(moveOccurred==1)
         [self randomNumberGenerator];
+    
+    noOfLeftMoves = 0;
+    noOfRightMoves = 0;
+    noOfUpMoves = 0;
+    noOfDownMoves = noOfDownMoves + 1;
+    
+    if(noOfDownMoves == 3)
+    {
+        [self deleteRandomTile];
+        noOfDownMoves = 0;
+    }
+    
     [self tileColorChange];
+
 }
 
 -(void)moveDown
